@@ -1,4 +1,4 @@
-Automation For The Win!
+Continuous Integration For The Win!
 ========================================================
 
 The slides for my presentation at [PyTennessee 2017][event].
