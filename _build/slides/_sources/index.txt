@@ -26,31 +26,23 @@ Introduction
 
 I'm the Chief Executive Developer at `Level 12 <https://www.level12.io/>`_.
 
-Level 12 is software development firm
-specializing in web and data(base) projects tailor made for our customers.
+Level 12 is a software development firm specializing in web and data(base) applications.
+We build custom software to address complex business problems.
 
-Agile methodologies make our customers happy...really, really, happy.
+We are particularily passionate about:
 
-Why should you care?
+    - Productivity – Invest time, talent, and resources for significant value
+    - Craftsmanship – this goes beyond technical competence, we are passionate about building
+      software the right way.
 
 .. note::
-  * I'm the founder of Level 12.  I've been working with databases and web applications for
+  - I'm the founder of Level 12.  I've been working with databases and web applications for
     for over 15 years.
-  * I've been working directly with customers on custom projects for about 12 years.
-  * My customers aren't "big players."
-  * They are generally naive about software development best practices.
-  * They generally care about our responsiveness, product quality, and cost.
-  * If we can make time for automation, it's likely you can too.
-
-
-My "real world", YMMV
-============================
-
-- Methods & concepts refined over last 8 years
-- Primarily involved with web & data(base) development
-- Not operating *"at scale"*
-- These are "Best Practices" and I'm a slow adopter
-- Your context will differ, that's ok!
+  - I've been working directly with customers on custom projects for about 12 years.
+  - My customers aren't "big players."
+  - They are generally naive about software development best practices.
+  - They generally care about our responsiveness, product quality, and cost (ROI).
+  - If we can make time for testing & automation, it's likely you can too.
 
 
 What's your real world?
@@ -66,24 +58,20 @@ What's your real world?
 
 .. note::
   - BUILD!!
+  - I like interaction, get a sense of who I'm talking to.
 
 
 This Presentation
 =================
 
-* Encouragement
-* Technical summary of layers involved
-* Questions
+- Guiding Principles
+- Encouragement
+- Technical summary of layers involved
+- Questions
 
 .. note::
   - NOT going to show in-depth config or coding
-  - I really would like interaction
-  - If you are one of those people that loves to answer questions, wait about 4 seconds and then
-    feel free to hop in.  If I ask a question, it's probably not rhetorical.
-  - If it was meant to be rhetorical, I might make fun of you a little, but...don't worry...
-    I promise it's not personal.
-  - Seriously, I want to get the thinking juices going.  Please speak up.
-  - If you stump me, you can all laugh a bit, and don't worry, I won't take it personal.
+  - I really would like interaction, I want to get the thinking juices going.  Please speak up.
 
 
 Learning Curve Paralysis
@@ -96,7 +84,8 @@ Technology fatigue is real, but this is worth it.
   - Yes, at conferences!!!
   - Who has attended conferences before?  How many things do you actually follow up on?
   - One piece of advice: take one thing away from this conference that you will act on, maybe two.
-  - This really, really, really is worth it.
+  - This is really, really, really worth it.
+  - Replacing fear of failure and pressure with confidence.
 
 
 My Goal?
@@ -108,14 +97,15 @@ My Goal?
 
 .. note::
   - NO!
-  - I'm not on an automation bandwagon.
+  - I'm not on an automation or testing bandwagon.
+  - I'm a slow adopter, value is really important.
   - I have long-term goals that dictate the necessity of automation.
   - But before I tell you more....
 
 What's Your Goal?
 =================
 
-Seriously, what is/are the guiding principle(s) that govern how you build software?
+No...REALLY...What are the guiding principles that govern how you build software?
 
 
 My Software Development Goal
@@ -123,8 +113,8 @@ My Software Development Goal
 
 To sustainably:
 
-* Respond to change with minimal friction
-* Frequently deliver highly functional software
+- Respond to change with minimal friction
+- Frequently deliver highly functional software
 
 -----------
 
@@ -132,26 +122,37 @@ Four components: flexibility, velocity, quality, & cost
 
 .. note::
   - Find the four components in the goal.
-  - Where is the tension?
+  - Tension exists, we need something to help us relieve the tension.
   - What is this?  Yes, Agile.
-  - Quick question: is Scrum agile?  Is Agile scrum?
-  - Agile is not Scrum, I'm sorry if Scrum or any other agile methodology has been a bad experience
-    for you.
+  - Quick question: is Scrum agile?  Is Agile scrum?.  Agile is not Scrum.
   - Agile is a set of principles, Google Agile Manifesto for more info.
-  - My goal is a distillation of the principles listed in the Agile Manifesto.
-  - Remember the title of this talk.  This is my win!
-  - Agree or Strongly Agree that this is a noble goal for just about any development team?
+  - This goal is "truly agile".
+  - Remember the title of this talk.  This is my win!  Autmation for "truly agile" dev.
+  - Agree or Strongly Agree that this is a noble goal for just about any dev team?
+
 
 Delivering on that Goal
 =======================
 
-`assert`: Without heavy use of automated processes, especially testing, a truly agile workflow
+`assert`: Without heavy use of automated processes, especially testing, a "truly agile" workflow
 is impossible.
 
 .. note::
-  - "truly agile workflow" --> my goal
-  - Note that there are two components that need to be automated: testing and processes
-  - The rest of this presentation is my attempt to convince you that this assertion is sound.
+  - two components automated: testing and processes
+  - This presentation attempts to convince this is true
+
+
+CI without Automated Tests
+==========================
+
+Neutered.
+
+(Unless you are compiling something)
+
+.. note::
+  - Start with quality tests suite.
+  - We operated for years with automated tests that ran on the dev's machine (not CI)
+  - Your largest ROI will be in building the test suite, I can't really emphasize that enough.
 
 
 Let's talk about Tests!
@@ -173,28 +174,15 @@ Let's talk about Tests!
 Developers Need to Write Tests
 ==============================
 
-`assert`: If developers are not creating automated tests in parallel with the production code, a truly
-agile workflow is unsustainable.
+`assert`: If developers are not creating automated tests in parallel with the production code, a
+truly agile workflow is unsustainable.
 
 
 .. note::
-  - Frequently deliver *highly functional software*
-  - Highly functional software requires testing be done.
-  - Most developers will manually test some of their code, but that's not enough to satisfy my
-    goal.
-
-
-Reasons
-=============================
-
-* Quick iterations and frequent changes cause bugs.
-* If you want high-quality software, you have to test for and fix bugs.
-* As code volume and complexity grows over time, it becomes impossible to
-  manually verify all functionality.
-* Without automation, the effort expended testing is wasted.
-
-.. note::
-  - Respond to change with minimal friction and frequently deliver highly functional software
+  - Quick iterations and frequent changes cause bugs.  How do I ensure highly functional software?
+  - Automated or manual?
+  - Who writes the tests? Devs or QA
+  - When are they written?  With the code or later?
 
 
 Manual Testing is Unsustainable
@@ -221,8 +209,6 @@ Manual Testing is a Losing Battle
 
 .. note::
   - This is unsustainable
-  - Remember my goal: To sustainably respond to change with minimal friction and frequently deliver
-    highly functional software
 
 
 Testing: Asset or Expense
@@ -230,6 +216,12 @@ Testing: Asset or Expense
 
 - Manual testing is an expense
 - Automated testing is mostly an asset, with maintenance related expenses
+
+.. note::
+  - Who is doing this manual testing, what is their time worth?
+  - Automated tests contribute to the long-term value of your application.
+  - A commitment to manual testing (explicit or implicit) is usually a commitment to build software that
+    that is poorly tested.
 
 
 Automated Testing Saves Time
@@ -241,6 +233,7 @@ In both the short-term and the long-term.
 
 .. note::
   - Why don't you test...it takes too much time.
+  - No one cares about sofware asset value, they simply want me to ship the next thing.
 
 
 I Don't Need No Stink'n Tests
@@ -257,8 +250,9 @@ I Don't...Need....ummm...help?
    :class: fullpic
 
 .. note::
-  - Yes, this is a little self-serving, we don't see that many forms that look like this.
-  - But, doesn't the complexity of the software we are building more often resemble this example?
+  - Yes, this is a little self-serving, not your average form
+  - Is our software typically simple or complex?
+  - Complex software is usually difficult to setup test cases for.  17 layers of DB objects.
 
 
 Time Savings Overall
@@ -276,29 +270,45 @@ Time Savings Overall
     ensuring the software is not broken.
   - That can affect developers, QA staff, management, and customers as releases are delayed and
     even simple changes take months to get released.
+  - Manual testing leads to slow and fear-driven development.  Automated testing wins.
 
+
+Who Tests?
+==================
+
+Devs or QA?
+
+.. note::
+  - I'm not slamming QA, I'll come back to the role of QA.
+  - Are their usually more devs or QA peeps?  Can QA really keep up?
+  - Who usually understands the complexity and nuances better, devs or QA?
+  - Is QA able to test as well as devs?  Automated tests are code, who is usually most skilled
+    at writing code?
+  - A commitment to QA testing instead of devs is usually a result of giving lip service to
+    agile and/or automated testing.
+
+
+When to Test?
+==================
+
+Test in parallel (TDD or immediately after) or test "later?"
+
+.. note::
+  - When is the best time to test?  When the problem is fresh or stale?
+  - Can tests be an asset to the developer in helping them write better code?  Corner cases?
+  - Let's be honest, how often do tests really get written "later"?
+  - A commitment to test "later" is usually a commitment to test poorly or not at all.
 
 
 A Final Plea
 ============
 
-* Manual testing is not sustainable, code quality will continually decrease as complexity increases.
-* You are already testing, capture the value!
-* Use devs for what they are good at (writing code to deal with repetition)
-* Use QA peeps for what they are good at (break it!, UI/UX, non-repetitive)
-* Just get started.  An object at rest...
-* Keep at it, it will become natural
-
-
-CI without Automated Tests
-==========================
-
-Neutered.
-
-.. note::
-  - If you don't have a quality test suite in place, start with that.
-  - We operated for years with automated tests that ran on the dev's machine (not CI)
-  - Your largest ROI will be in building the test suite, I can't really emphasize that enough.
+- Manual testing is not sustainable, code quality will continually decrease as complexity increases.
+- Devs are already testing, capture the value!
+- Use devs for what they are good at (writing code to deal with repetition)
+- Use QA peeps for what they are good at (break it!, UI/UX, non-repetitive)
+- Just get started.  An object at rest...
+- Keep at it, it will become natural
 
 
 I Practice What I Preach
@@ -330,68 +340,41 @@ Release interval: whenever (multiple times per day if needed)
 Delivering on my Goal (CI)
 ==========================
 
-Without heavy use of automated processes, especially testing, a truly agile workflow is impossible.
+Without heavy use of automated *processes*, especially testing, a truly agile workflow is impossible.
 
 .. note::
   - To sustainable respond to change with minimal friction and frequently deliver highly
     functional software.
-  - And I'm arguing that that the statement above is true.
-  - I've talked about the testing part, but now I'm switching focus to process and CI in particular.
+  - I've talked about the testing part, but now I'm switching focus to the process of getting
+    code from the developer's level to the ready-to-release level.
 
 
 Our Development Workflow
 ========================
 
-* Development on Git branch (prefer small changes)
-* PR for merge
-* Review code diff
-* Validate all tests pass
-* Validate linting
-* Validate code coverage
-* Some changes require manual QA
+- Development on Git branch (prefer small changes)
+- PR for merge
+- Review code diff
+- Validate all tests pass
+- Validate linting
+- Validate code coverage
+- Some changes require manual QA
 
 .. note::
   - Does this seem reasonable?
-  - Will this contribute significantly to my goal?
-  - Do you do this?
+  - Will this contribute significantly to my "truly agile" goal?
+  - This is great, but, it's a bit verbose.
 
 
 Workflow Execution without Automation
 =====================================
 
-How likely is it that workflow will get executed for every commit if not automated?
+How likely is it that workflow will get executed for every merge to master if not automated?
 
 .. note::
   - I've never met a developer that likes manual and repetitive tasks.
   - If he or she can't automate it, they will usually find a way to stop doing it.
-
-
-Delivering on that Goal
-=======================
-
-Delivering on my goal: requires **automated testing and processes**, there is no other way.
-
-Impossible to sustain manually!
-
-.. note::
-  - To sustainable respond to change with minimal friction and frequently deliver highly
-    functional software.
-
-
-Workflow Review
-========================
-
-* Development on Git branch (prefer small changes)
-* PR for merge
-* Review code diff
-* Validate all tests pass
-* Validate linting
-* Validate code coverage
-* Some changes require manual QA
-
-.. note::
-  - Takes a good bit of work to do this manually.
-  - How long to do this manually?
+  - So, let's automate.
 
 
 Automated Workflow
@@ -401,7 +384,14 @@ Automated Workflow
    :class: fullpic
 
 .. note::
+  - Development on Git branch (prefer small changes)
+  - PR for merge
+  - Review code diff
+  - Validate all tests pass
+  - Validate linting
+  - Validate code coverage
   - My dev's have no excuse for not following our workflow guidelines.
+  - The only part of my workflow that isn't automated is when manual QA is needed.
 
 
 More than a Process
@@ -421,6 +411,12 @@ CI: Eat the Elephant
 Getting CI to run correctly is often frustrating.  Rabbit holes galore.
 
 Focus on constant incremental improvements, building layer by layer.
+
+
+CI Example Project
+========================
+
+https://github.com/rsyring/pypicalc2
 
 
 Speaking of Layers
@@ -518,11 +514,11 @@ Speaking of Layers
 Tox Summary
 ========================
 
-* Creates virtualenvs
-* Installs dependencies from wheelhouse
-* Runs the tests w/ coverage
-* Runs the linter
-* Fails with a non-zero exit code if applicable
+- Creates virtualenvs
+- Installs dependencies from wheelhouse
+- Runs the tests w/ coverage
+- Runs the linter
+- Fails with a non-zero exit code if applicable
 
 Tox
 ========================
@@ -646,7 +642,7 @@ Code Coverage w/ CodeCov
 
   deployment:
     codecov:
-      branch: /.*/
+      branch: /.-/
       commands:
         - bash <(curl -s https://codecov.io/bash) -t <token>
 
@@ -670,6 +666,9 @@ Speaking of Layers
 - Code Coverage
 - *Service Integration (Slack, GitHub, Email)*
 
+.. note::
+  - Supporting culture with visibility.
+
 
 Service Integration: Slack
 ==========================
@@ -685,18 +684,20 @@ Service Integration: GitHub
    :class: fullpic
 
 
-Questions?
+Thanks & Questions
 ======================
 
-Thanks for attending.
+Thanks for attending.  Any questions?
 
 | By: Randy Syring
 | Twitter: @RandySyring
 | Email: randy.syring@level12.io
 | https://github.com/rsyring/
 
-Image credits:
 
-* `Image Credit <http://reqtest.com/testing-blog/you-cant-work-agile-without-automated-testing/>`_
-* `Image Credit 2 <http://www.slideshare.net/lfingerman/test-automation-best-prcatices-with-soa-test-approach>`_
-* `Example Project <http://reqtest.com/testing-blog/you-cant-work-agile-without-automated-testing/>`_
+Credits
+======================
+
+Credits: `Image Credit <http://reqtest.com/testing-blog/you-cant-work-agile-without-automated-testing/>`_,
+`Image Credit 2 <http://www.slideshare.net/lfingerman/test-automation-best-prcatices-with-soa-test-approach>`_,
+`Example Project <http://reqtest.com/testing-blog/you-cant-work-agile-without-automated-testing/>`_
